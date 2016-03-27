@@ -1,0 +1,17 @@
+{
+    "name": "ide2/telegram-handler",
+    "description": "Handle logs with telegram bot",
+    "require": {
+        "monolog/monolog": "^1.18"
+    },
+    "require-dev": {
+        "rafaelnery/phputils": "^1.2"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Renan Melo",
+            "email": "renanrmelo@gmail.com"
+        }
+    ]
+}
