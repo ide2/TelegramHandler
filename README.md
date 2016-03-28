@@ -1,7 +1,7 @@
 # TelegramHandler
 Handle logs with telegram bot
 
-Simple log with telegram
+Simple monolog with telegram
 
 
 ## Installation
@@ -20,6 +20,8 @@ telegram:
   token: 123456:abcdefgdkjaskldjas #change to the correct token
   chat_id: xxxxxxxxx #change to the chat id
 ```
+
+## Basic Usage
 
 ```php
 <?php
