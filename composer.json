@@ -2,7 +2,9 @@
     "name": "ide2/telegram-handler",
     "description": "Handle logs with telegram bot",
     "require": {
-        "monolog/monolog": "^1.18"
+        "monolog/monolog": "^1.18",
+        "irazasyed/telegram-bot-sdk": "^2.0",
+        "symfony/yaml": "^3.0"
     },
     "require-dev": {
         "rafaelnery/phputils": "^1.2"
