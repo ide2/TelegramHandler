@@ -1,8 +1,7 @@
 # TelegramHandler
+
 Handle logs with telegram bot
-
 Simple monolog with telegram
-
 
 ## Installation
 
