@@ -18,7 +18,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "IDE2\\TelegramHandler\\": "src/"
+            "IDE2\\telegram-handler\\": "src/"
         }
     }
 }
