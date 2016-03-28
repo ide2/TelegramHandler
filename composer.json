@@ -15,5 +15,10 @@
             "name": "Renan Melo",
             "email": "renanrmelo@gmail.com"
         }
-    ]
+    ],
+    "autoload": {
+        "psr-4": {
+            "IDE2\\SeCopy\\": "src/"
+        }
+    }
 }
