@@ -18,7 +18,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "TelegramHandler": "src/"
+            "TelegramHandler\\": "src/"
         }
     }
 }
