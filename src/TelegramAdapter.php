@@ -1,22 +1,27 @@
 <?php
 
 namespace TelegramHandler;
-use Telegram\Bot\Api;
+use Telegram\Bot\Api as TelegramBotApi;
 use Symfony\Component\Yaml\Parser;
 
+/**
+ * TelegramAdapter
+ *
+ * @author Renan Melo <renanrmelo@gmail.com>
+ * @author Rafael Nery <rafael@nery.info>
+ *
+ * @see AbstractProcessingHandler
+ */
 class TelegramAdapter {
 
   private $telegram;
 
   private $chat_id;
 
-  public function __construct() {
+  public function __construct($token, $chatId) {
 
-    $config        = $this->getConfig();
-    $this->chat_id = $config['chat_id'];
-
-    $this->telegram = new Api($config['token']);
-
+    $this->telegram = new TelegramBotApi($token);
+    $this->chat_id  = $chatId;
     return $this;
   }
 
@@ -27,13 +32,5 @@ class TelegramAdapter {
          'text' => $message,
          'parse_mode' => 'HTML'
     ]);
-  }
-
-  private function getConfig() {
-
-    $yaml   = new Parser();
-    $config = $yaml->parse(file_get_contents('config.yml'));
-
-    return $config['telegram'];
   }
 }
