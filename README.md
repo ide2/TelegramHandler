@@ -1,4 +1,6 @@
 # TelegramHandler
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/ide2/TelegramHandler/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/ide2/TelegramHandler/?branch=master)
+[![Build Status](https://scrutinizer-ci.com/g/ide2/TelegramHandler/badges/build.png?b=master)](https://scrutinizer-ci.com/g/ide2/TelegramHandler/build-status/master)
 
 Handle logs with telegram bot
 
