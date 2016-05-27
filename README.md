@@ -1,4 +1,5 @@
 # TelegramHandler
+[![SensioLabsInsight](https://insight.sensiolabs.com/projects/82a67d29-9cc3-4300-abf3-3fb99c681b92/mini.png)](https://insight.sensiolabs.com/projects/82a67d29-9cc3-4300-abf3-3fb99c681b92)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/ide2/TelegramHandler/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/ide2/TelegramHandler/?branch=master)
 [![Build Status](https://scrutinizer-ci.com/g/ide2/TelegramHandler/badges/build.png?b=master)](https://scrutinizer-ci.com/g/ide2/TelegramHandler/build-status/master)
 
@@ -11,7 +12,7 @@ Simple monolog with telegram
 Install the latest version with
 
 ```bash
-$ composer require ide2/telegram-handler
+composer require ide2/telegram-handler
 ```
 
 ## Basic Usage
