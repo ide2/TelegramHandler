@@ -41,9 +41,6 @@ class TelegramHandler extends AbstractProcessingHandler {
      */
     protected function write(array $record)
     {
-      $message  = '<b>' . $record['channel'] . '</b>' . PHP_EOL;
-      $message .= $record['formatted'];
-
-      $this->telegram->sendMessage($message);
+      $this->telegram->sendMessage($record['formatted']);
     }
 }
