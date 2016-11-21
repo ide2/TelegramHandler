@@ -24,6 +24,8 @@ require 'vendor/autoload.php';
 
 use Monolog\Logger;
 use Monolog\Handler\StreamHandler;
+use TelegramHandler\TelegramHandler;
+use TelegramHandler\TelegramFormatter;
 
 // create a log channel
 $token   = '123456:abcdefgdkjaskldjas';
@@ -31,6 +33,7 @@ $chat_id = 123456789;
 
 $log     = new Logger('MyTestApplication');
 $handler = new TelegramHandler($token, $chat_id, Logger::INFO);
+$handler->setFormatter(new TelegramFormatter());
 $log->pushHandler($handler);
 
 $log->addInfo('Lorem ipsum dolor sit.', ['test', 'test test']);
